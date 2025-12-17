@@ -1,7 +1,37 @@
-body {
-    background: #291d30; /*temp background color, assuming darker final background */
+header {
+    padding: 1em;
+    border-bottom: 5px solid black;
+    font-family: "Trykker", serif;
+    background: #673e7f;
+
+    /* Lock the header to the top of the screen. */
+    position: sticky;
+    top: 0;
+    z-index: 67;
+}
+
+header * {
+    vertical-align: middle;
+}
+
+header span {
+    margin-left: 0.2em;
+    font-size: 2em;
+}
+
+header img {
+    height: 2.5em;
+}
+
+#main-page-contents {
     margin-left: 10%;
     margin-right: 10%;
+}
+
+body {
+    background: #291d30; /*temp background color, assuming darker final background */
+    margin: 0;
+    color: white;
 }
 
 h1, h2, h3 {
