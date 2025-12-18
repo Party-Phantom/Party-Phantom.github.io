@@ -6,7 +6,7 @@
 header {
     padding: 1em;
     border-bottom: 5px solid black;
-    font-family: "Phantom", serif;
+    font-family: "Trykker", serif;
     background: #673e7f;
 
     /* Lock the header to the top of the screen. */
@@ -40,7 +40,7 @@ body {
 }
 
 h1, h2, h3 {
-    font-family: "Trykker", serif;
+    font-family: "Phantom", serif;
 }
 
 h1 {
