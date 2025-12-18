@@ -1,7 +1,7 @@
 @font-face{
   font-family: "Phantom";
-  src: url("../misc/phantom.ttf") format("truetype"); /* Establishes new Phantom of the Opera style font */
-  } 
+  src: url("../fonts/phantom.ttf") format("truetype"); /* Establishes new Phantom of the Opera style font */
+}
 
 header {
     padding: 1em;
@@ -80,7 +80,7 @@ p {
 /* mobile compatibility */
 
 /* larger screens */
-@media screen and (min-width: 2560px) { 
+@media screen and (min-width: 2560px) {
     h1 {
       font-size: 6em;
     }
