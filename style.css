@@ -1,7 +1,12 @@
+@font-face{
+  font-family: "Phantom";
+  src: url("DragonCaps.ttf");
+  } 
+
 header {
     padding: 1em;
     border-bottom: 5px solid black;
-    font-family: "Trykker", serif;
+    font-family: "Phantom", serif;
     background: #673e7f;
 
     /* Lock the header to the top of the screen. */
