@@ -13,6 +13,7 @@ header {
     /* Lock the header to the top of the screen. */
     position: sticky;
     top: 0;
+    width: 100%; /* Fit for mobile screen width */
     z-index: 67;
 }
 
@@ -49,7 +50,7 @@ h1 {
     text-align: center;
     line-height: 1.3em;
     letter-spacing: 5px;
-    font-size: 6em;
+    font-size: 5%; /* Make h1 scale to device width */
     text-shadow: -6px 7px 15px rgba(112, 95, 100, 0.4);
     margin-bottom: .2em;
 }
