@@ -44,7 +44,7 @@ h1, h2, h3 {
 }
 
 title-header {
-  font-family: "Phantom", serif;
+  font-family: "Phantom", serif !important;
 }
 
 h1 {
