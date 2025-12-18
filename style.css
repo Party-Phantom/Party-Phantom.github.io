@@ -1,6 +1,6 @@
 @font-face{
   font-family: "Phantom";
-  src: url("../misc/phantom.ttf") format("truetype");
+  src: url("../misc/phantom.ttf") format("truetype"); /* Establishes new Phantom of the Opera style font */
   } 
 
 header {
@@ -8,6 +8,7 @@ header {
     border-bottom: 5px solid black;
     font-family: "Trykker", serif;
     background: #0d121c; /* Darker blue seems right for the sticky header! */
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.75);
 
     /* Lock the header to the top of the screen. */
     position: sticky;
@@ -39,15 +40,12 @@ body {
     color: white;
 }
 
-h1, h2, h3 {
+h2, h3 {
     font-family: "Trykker", serif;
 }
 
-title-header {
-  font-family: "Phantom", serif !important;
-}
-
 h1 {
+    font-family: "Phantom", serif; /* Custom Phantom of the Opera font */
     text-align: center;
     line-height: 1.3em;
     letter-spacing: 5px;
