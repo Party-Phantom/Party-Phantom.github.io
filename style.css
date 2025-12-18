@@ -50,14 +50,13 @@ h1 {
     text-align: center;
     line-height: 1.3em;
     letter-spacing: 5px;
-    font-size: 80%; /* Make h1 scale to device width */
     text-shadow: -6px 7px 15px rgba(112, 95, 100, 0.4);
     margin: .2em 0em;
 }
 
 h2 {
     text-align: left;
-    font-size: 84%; /* Trying out percents to see if it's more consistent with mobile */
+    font-size: 2.3em;
     font-weight: bold; /* Testing to see if it can recommit */
 }
 
@@ -76,4 +75,25 @@ p {
     aspect-ratio: 1;
     padding: 0;
     margin: 0px 5px;
+}
+
+/* mobile compatibility */
+
+/* larger screens */
+@media screen and (min-width: 2560px) { 
+    h1 {
+      font-size: 6em;
+    }
+}
+/* medium screens */
+@media screen and (max-width: 2560px) and (min-width: 1920px) {
+    h1 {
+      font-size: 5.5em;
+    }
+}
+/* smaller screens */
+@media screen and (max-width: 1920px) {
+    h1 {
+      font-size: 4em;
+    }
 }
