@@ -50,14 +50,14 @@ h1 {
     text-align: center;
     line-height: 1.3em;
     letter-spacing: 5px;
-    font-size: 5vw; /* Make h1 scale to device width */
+    font-size: 80%; /* Make h1 scale to device width */
     text-shadow: -6px 7px 15px rgba(112, 95, 100, 0.4);
-    margin-bottom: .2em;
+    margin: .2em 0em;
 }
 
 h2 {
     text-align: left;
-    font-size: 2.1vw; /* Trying out percents to see if it's more consistent with mobile */
+    font-size: 84%; /* Trying out percents to see if it's more consistent with mobile */
     font-weight: bold; /* Testing to see if it can recommit */
 }
 
