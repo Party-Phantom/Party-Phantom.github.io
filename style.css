@@ -65,6 +65,10 @@ p {
     font-family: "Yrsa";
 }
 
+
+
+/* social media */
+
 #social-media-links {
     text-align: center;
 }
@@ -76,6 +80,27 @@ p {
     padding: 0;
     margin: 0px 5px;
 }
+
+
+
+/* info section */
+
+#party-info {
+    text-align: center;
+}
+
+#party-platform, #party-other {
+    display: inline-block;
+    margin: 50px;
+    padding: 20px;
+    text-align: left;
+}
+
+.info-heading {
+    text-align: center;
+}
+
+
 
 /* mobile compatibility */
 
