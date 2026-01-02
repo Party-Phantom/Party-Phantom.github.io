@@ -33,6 +33,7 @@ header img {
 #main-page-contents {
     margin-left: 10%;
     margin-right: 10%;
+    text-align: center;
 }
 
 body {
@@ -55,7 +56,7 @@ h1 {
 }
 
 h2 {
-    text-align: left;
+    text-align: center;
     font-size: 2.3em;
     font-weight: bold; /* Testing to see if it can recommit */
 }
@@ -63,6 +64,11 @@ h2 {
 p {
     font-size: 24px;
     font-family: "Yrsa";
+}
+
+ul {
+    padding: 0;
+    display: inline-block;
 }
 
 
@@ -93,12 +99,104 @@ p {
     display: inline-block;
     margin: 50px;
     padding: 20px;
-    text-align: left;
+    text-align: center;
 }
 
 .info-heading {
     text-align: center;
 }
+
+
+
+/* leader section */
+
+.party-leaders {
+
+}
+
+.president {
+
+}
+
+.vice-p {
+
+}
+
+.chair {
+
+}
+
+.f-chair {
+
+}
+
+.d-chair {
+
+}
+
+
+/* photo section */
+
+.party-photos {
+
+}
+
+.party-videos {
+
+}
+
+
+/* calendar section */
+
+.calendar {
+
+}
+
+
+
+/* navbar */
+
+.navbar {
+  display: inline-block;
+  align-items: center;
+  gap: 20px;
+}
+
+.dropdown {
+  position: right;
+}
+
+#menu-toggle:checked ~ .dropdown-content {
+  display: block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  z-index: 1000;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown-content a:hover {
+  background-color: #eee;
+}
+
+.dropdown:click .dropdown-content {
+  display: block;
+}
+
+
 
 
 
@@ -111,6 +209,10 @@ p {
     }
     h2 {
       font-size: 2.6em;
+    }
+    iframe {
+        width="1920";
+        height="1080";
     }
 
     #party-platform, #party-other {
@@ -126,6 +228,10 @@ p {
     h2 {
       font-size: 2.3em;
     }
+    iframe {
+        width="1600";
+        height="900";
+    }
 
     #party-platform, #party-other {
         margin: 50px;
@@ -140,6 +246,10 @@ p {
     h2 {
       font-size: 2em;
     }
+    iframe {
+        width="1280";
+        height="720";
+    }
 
     #party-platform, #party-other {
         margin: 40px;
@@ -153,6 +263,10 @@ p {
     }
     h2 {
       font-size: 1.8em;
+    }
+    iframe {
+        width="560";
+        height="315";
     }
 
     #party-platform, #party-other {
