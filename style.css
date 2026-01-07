@@ -1,24 +1,21 @@
-@font-face{
-  font-family: "Phantom";
-  src: url("../fonts/phantom.ttf") format("truetype"); /* Establishes new Phantom of the Opera style font */
-}
-
 :root {
     /* Main colors */
-    --party-color-black: #0C0604;
-    --party-color-blue: #0F233F;
-    --party-color-red: #752437;
+    --party-color-black: #0C090B;
+    --party-color-navy: #161F30;
+    --party-color-blue: #09264C;
+    --party-color-red: #671A29;
 
     /* Accent colors */
-    --party-color-gold: #CE9C4C;
+    --party-color-gold: #EAAA52;
     --party-color-silver: #EDE2CE;
+    --party-color-cream: #EEE8DC
 }
 
 header {
     padding: 1em;
     border-bottom: 5px solid black;
     font-family: "Trykker", serif;
-    background: #01050e; /* Darker blue seems right for the sticky header! */
+    background: var(--party-color-navy); /* Darker blue seems right for the sticky header! */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
 
     /* Lock the header to the top of the screen. */
@@ -44,13 +41,14 @@ header img {
 #main-page-contents {
     margin-left: 10%;
     margin-right: 10%;
+    margin-top: 50px;
     padding-top: 3.5em;
     text-align: center;
     transition: all 0.5s ease-in-out;
 }
 
 body {
-    background: #0c111b; /*Darker background color, may change in final background */
+    background: var(--party-color-blue); /*Darker background color, may change in final background */
     margin: 0;
     color: white;
 }
@@ -61,12 +59,13 @@ h2, h3 {
 
 h1 {
     font-family: "Phantom", serif; /* Custom Phantom of the Opera font */
+    color: var(--party-color-cream);
     text-align: center;
     line-height: 1.3em;
     letter-spacing: 5px;
     text-shadow: -6px 7px 15px rgba(112, 95, 100, 0.4);
     margin: .2em 0em;
-    padding-top: 100px;
+    padding-top: 20px;
     padding-bottom: 15px;
 }
 
