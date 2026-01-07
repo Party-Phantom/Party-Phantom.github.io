@@ -1,3 +1,8 @@
+@font-family {
+    font-family: 'Sloop Script Pro'; /* Name you will use in your CSS */
+    src: url('fonts/Sloop-ScriptThree.ttf') format('ttf')
+}
+
 :root {
     /* Main colors */
     --party-color-black: #0C090B;
@@ -14,7 +19,7 @@
 header {
     padding: 1em;
     border-bottom: 5px solid black;
-    font-family: "Trykker", serif;
+    font-family: "Belleza", serif;
     background: #0d1627; /* Darker blue seems right for the sticky header! */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
 
