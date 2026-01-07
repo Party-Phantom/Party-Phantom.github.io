@@ -363,6 +363,10 @@ ul {
         height: 1080;
     }
 
+    .party-leaders img {
+      width: 75%;
+    }
+
     #party-platform, #party-other {
         margin: 70px;
         padding: 25px;
@@ -379,6 +383,10 @@ ul {
     iframe {
         width: 1600;
         height: 900;
+    }
+
+    .party-leaders img {
+        width: 75%;
     }
 
     #party-platform, #party-other {
@@ -399,6 +407,10 @@ ul {
         height: 720;
     }
 
+   .party-leaders img {
+        width: 75%;
+   }
+
     #party-platform, #party-other {
         margin: 40px;
         padding: 17px;
@@ -417,6 +429,12 @@ ul {
         height: 315;
     }
 
+    .party-leaders img {
+        width: 90%;
+    }
+    .leader-info {
+        width: 90%;
+    }
     #party-platform, #party-other {
         margin: 30px;
         padding: 15px;
