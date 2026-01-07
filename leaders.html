@@ -20,8 +20,9 @@
         <nav class="navbar">
             <div class="dropdown">
                 <input type="checkbox" id="menu-toggle" hidden>
-                <label for="menu-toggle" class="menu-btn">
-                    <img src="img/page_arrow.svg" alt="dropdown" class="nav-arrow">
+                <div id="overlay" onclick="closeMenu()"></div>
+                <label for="menu-toggle" class="menu-btn" onclick="openMenu()">
+                    <img src="img/ThreeBars.svg" id="linesButton" alt="dropdown">
                 </label>
                 <div class="dropdown-content">
                     <a href="/">Home</a>
@@ -89,4 +90,5 @@
         </div>
     </div>
 </div>
+    <script src="js/navbar.js"></script>
 </body>
