@@ -44,6 +44,7 @@ header img {
 #main-page-contents {
     margin-left: 10%;
     margin-right: 10%;
+    padding-top: 3.5em;
     text-align: center;
     transition: all 0.5s ease-in-out;
 }
@@ -125,39 +126,56 @@ ul {
 /* leader section */
 
 .party-leaders {
-  
-}
-
-.president {
-
-}
-
-.vice-p {
 
 }
 
 .chair {
+    border: solid 2px white;
+    border-radius: 30px;
+    margin: 30px 0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
 }
 
-.f-chair {
+.president {
+    border: solid 2px white;
+    border-radius: 30px;
+    margin: 30px 0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+}
 
+.vice-p {
+    border: solid 2px white;
+    border-radius: 30px;
+    margin: 30px 0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
 }
 
 .d-chair {
-
+    border: solid 2px white;
+    border-radius: 30px;
+    margin: 30px 0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
 }
 
-#leader-info {
+.f-chair {
+    border: solid 2px white;
+    border-radius: 30px;
+    margin: 30px 0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+}
+
+.leader-info {
   margin: auto;
   width: 75%;
 }
 
-#leader-info p {
+.leader-info p {
   text-wrap: wrap;
 }
 
 .party-leaders img {
   width: 75%;
+  border-radius: 30px;
 }
 
 
@@ -219,6 +237,8 @@ ul {
 #calendar .empty-cell {
     border: none;
 }
+
+
 
 /* navbar replacement */
 
