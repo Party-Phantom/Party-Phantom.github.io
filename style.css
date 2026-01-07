@@ -22,7 +22,7 @@ header {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
 
     /* Lock the header to the top of the screen. */
-    position: sticky;
+    position: fixed;
     top: 0;
     width: 100%; /* Fit for mobile screen width */
     z-index: 67;
