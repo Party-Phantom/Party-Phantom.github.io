@@ -113,7 +113,7 @@ ul {
 /* leader section */
 
 .party-leaders {
-  text-align: center;
+  
 }
 
 .president {
@@ -143,6 +143,11 @@ ul {
 #leader-info p {
   text-wrap: wrap;
 }
+
+.party-leaders img {
+  width: 75%;
+}
+
 
 
 /* photo section */
