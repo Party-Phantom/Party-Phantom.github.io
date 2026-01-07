@@ -3,6 +3,17 @@
   src: url("../fonts/phantom.ttf") format("truetype"); /* Establishes new Phantom of the Opera style font */
 }
 
+:root {
+    /* Main colors */
+    --party-color-black: #0C0604;
+    --party-color-blue: #0F233F;
+    --party-color-red: #752437;
+
+    /* Accent colors */
+    --party-color-gold: #CE9C4C;
+    --party-color-silver: #EDE2CE;
+}
+
 header {
     padding: 1em;
     border-bottom: 5px solid black;
@@ -163,11 +174,50 @@ ul {
 
 /* calendar section */
 
-.calendar {
+#calendar {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    border-collapse: collapse;
+    table-layout: fixed;
 
 }
 
+.calendar-cell {
+    aspect-ratio: 1;
+}
 
+#calendar th {
+    color: var(--party-color-gold);
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+#calendar .calendar-number {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+#calendar .calendar-cell-with-event {
+    color: var(--party-color-gold);
+}
+
+#calendar th, #calendar td {
+    padding: 10px;
+}
+
+#calendar td {
+    margin: 0;
+    border: solid var(--party-color-silver);
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    vertical-align: top;
+}
+
+#calendar .empty-cell {
+    border: none;
+}
 
 /* navbar */
 
@@ -226,8 +276,8 @@ ul {
       font-size: 2.6em;
     }
     iframe {
-        width="1920";
-        height="1080";
+        width: 1920;
+        height: 1080;
     }
 
     #party-platform, #party-other {
@@ -244,8 +294,8 @@ ul {
       font-size: 2.3em;
     }
     iframe {
-        width="1600";
-        height="900";
+        width: 1600;
+        height: 900;
     }
 
     #party-platform, #party-other {
@@ -262,8 +312,8 @@ ul {
       font-size: 2em;
     }
     iframe {
-        width="1280";
-        height="720";
+        width: 1280;
+        height: 720;
     }
 
     #party-platform, #party-other {
@@ -280,8 +330,8 @@ ul {
       font-size: 1.8em;
     }
     iframe {
-        width="560";
-        height="315";
+        width: 560;
+        height: 315;
     }
 
     #party-platform, #party-other {
