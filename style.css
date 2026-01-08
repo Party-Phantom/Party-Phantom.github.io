@@ -12,8 +12,8 @@
 
     /* Accent colors */
     --party-color-gold: #EAAA52;
-    --party-color-silver: #EDE2CE;
-    --party-color-cream: #EEE8DC
+    --party-color-silver: #f1f1f1;
+    --party-color-cream: #EEE8DC;
 }
 
 header {
@@ -446,7 +446,7 @@ ul {
 @media screen and (max-width: 1023px) {
     .title-sub {
       position:absolute;
-      left: 47.5%;
+      left: 47%;
       top: 160px;
       letter-spacing: 5px;
       font-size: 1.2em;
@@ -472,4 +472,8 @@ ul {
         margin: 30px;
         padding: 15px;
     }
+    .menu-btn {
+  top: 20px;
+  right: 10%;
+}
 }
