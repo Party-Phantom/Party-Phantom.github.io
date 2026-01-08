@@ -197,6 +197,16 @@ ul {
 
 }
 
+.party-photos img {
+  width: 40%;
+  display: inline-flex;
+  vertical-align: middle;
+
+  border: solid 2px white;
+  /* border-radius: 20px; */
+  margin: 10px;
+}
+
 .party-videos {
 
 }
