@@ -17,6 +17,7 @@
 }
 
 header {
+    text-align: left;
     padding: 1em;
     border-bottom: 5px solid black;
     font-family: "Belleza", serif;
@@ -39,6 +40,11 @@ header span {
     font-size: 2em;
 }
 
+header a {
+    text-decoration: none;
+    color: white;
+}
+
 header img {
     height: 2.5em;
 }
@@ -46,14 +52,12 @@ header img {
 #main-page-contents {
     margin-left: 10%;
     margin-right: 10%;
-    padding-top: 3em;
     text-align: center;
     transition: all 0.5s ease-in-out;
 }
 
 body {
     background: #09101d; /*Darker background color, may change in final background */
-    margin: 50px 0 0 0;
     color: white;
     text-align: center;
 }
@@ -336,9 +340,9 @@ ul {
 
 .dropdown-content a:hover {
     transition: all 0.5s ease-in-out;
-    background-color: #f0c15b6e;
-    opacity: 1;
-    text-shadow: -6px 7px 15px rgba(112, 95, 100, 0.4);
+    background-color: #eaa352bb;
+    opacity: 0.;
+    text-shadow: -6px 7px 15px rgba(0, 0, 0, 0.986);
 }
 
 .dropdown:click .dropdown-content {
