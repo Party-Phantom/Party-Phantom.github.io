@@ -53,7 +53,7 @@ header img {
 #main-page-contents {
     margin-left: 10%;
     margin-right: 10%;
-    margin-top: 30px;
+    margin-top: 100px;
     text-align: center;
     transition: all 0.5s ease-in-out;
 }
@@ -185,7 +185,7 @@ ul {
 }
 
 .party-leaders img {
-  width: 75%;
+  width: 65%;
   border-radius: 30px;
 }
 
@@ -381,7 +381,7 @@ ul {
     }
 
     .party-leaders img {
-      width: 75%;
+      width: 65%;
     }
 
     #party-platform, #party-other {
@@ -410,7 +410,7 @@ ul {
     }
 
     .party-leaders img {
-        width: 75%;
+        width: 65%;
     }
 
     #party-platform, #party-other {
@@ -439,7 +439,7 @@ ul {
     }
 
    .party-leaders img {
-        width: 75%;
+        width: 55%;
    }
 
     #party-platform, #party-other {
