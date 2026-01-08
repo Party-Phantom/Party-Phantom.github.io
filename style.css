@@ -46,16 +46,16 @@ header img {
 #main-page-contents {
     margin-left: 10%;
     margin-right: 10%;
-    margin-top: 50px;
-    padding-top: 3.5em;
+    padding-top: 3em;
     text-align: center;
     transition: all 0.5s ease-in-out;
 }
 
 body {
     background: #09101d; /*Darker background color, may change in final background */
-    margin: 0;
+    margin: 50px 0 0 0;
     color: white;
+    text-align: center;
 }
 
 h2, h3 {
@@ -358,9 +358,9 @@ ul {
 /* larger screens */
 @media screen and (min-width: 2560px) {
     .title-sub {
-      position:absolute;
-      left: 49.5%;
-      top: 220px;
+      position:relative;
+      top: 180px;
+      left: 40px;
       letter-spacing: 9px;
       font-size: 2.1em;
     }
@@ -387,9 +387,9 @@ ul {
 /* medium screens */
 @media screen and (max-width: 2560px) and (min-width: 1920px) {
     .title-sub {
-      position:absolute;
-      left: 48.5%;
-      top: 205px;
+      position:relative;
+      top: 160px;
+      left: 39px;
       letter-spacing: 9px;
       font-size: 1.9em;
     }
@@ -416,9 +416,9 @@ ul {
 /* smaller screens */
 @media screen and (max-width: 1919px) and (min-width: 1024px) {
     .title-sub {
-      position:absolute;
-      left: 48.5%;
-      top: 185px;
+      position:relative;
+      top: 140px;
+      left: 37px;
       letter-spacing: 9px;
       font-size: 1.8em;
     }
@@ -445,9 +445,9 @@ ul {
 /* phone screens */
 @media screen and (max-width: 1023px) {
     .title-sub {
-      position:absolute;
-      left: 47%;
-      top: 160px;
+      position:relative;
+      top: 95px;
+      left: 14px;
       letter-spacing: 5px;
       font-size: 1.2em;
     }
