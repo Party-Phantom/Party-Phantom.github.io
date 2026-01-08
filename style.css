@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'Sloop Script Pro'; /* Name you will use in your CSS */
-    src: url('fonts/Sloop-ScriptThree.ttf') format('ttf');
+    font-family: 'SloopScriptPro'; /* Name you will use in your CSS */
+    src: url('fonts/Sloop ScriptOne Regular.ttf');
 }
 
 :root {
@@ -20,7 +20,7 @@ header {
     padding: 1em;
     border-bottom: 5px solid black;
     font-family: "Belleza", serif;
-    background: #0d1627; /* Darker blue seems right for the sticky header! */
+    background: #040811; /* Darker blue seems right for the sticky header! */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
 
     /* Lock the header to the top of the screen. */
@@ -53,18 +53,20 @@ header img {
 }
 
 body {
-    background: var(--party-color-navy); /*Darker background color, may change in final background */
+    background: #09101d; /*Darker background color, may change in final background */
     margin: 0;
     color: white;
 }
 
 h2, h3 {
+    font-weight: lighter;
     font-family: "Belleza", serif;
 }
 
 h1 {
+    font-weight: lighter;
     font-family: "Sloop Script Pro", serif; /* Custom Phantom of the Opera font */
-    color: var(--party-color-cream);
+    color: var(--party-color-silver);
     text-align: center;
     line-height: 1.3em;
     letter-spacing: 5px;
@@ -76,8 +78,7 @@ h1 {
 
 h2 {
     text-align: center;
-    font-size: 2.3em;
-    font-weight: bold; /* Testing to see if it can recommit */
+    font-size: 2.5em;
 }
 
 p {
@@ -356,11 +357,18 @@ ul {
 
 /* larger screens */
 @media screen and (min-width: 2560px) {
+    .title-sub {
+      position:absolute;
+      left: 49.5%;
+      top: 220px;
+      letter-spacing: 9px;
+      font-size: 2.1em;
+    }
     h1 {
-      font-size: 6em;
+      font-size: 14em;
     }
     h2 {
-      font-size: 2.6em;
+      font-size: 3.2em;
     }
     iframe {
         width: 1920;
@@ -377,12 +385,19 @@ ul {
     }
 }
 /* medium screens */
-@media screen and (max-width: 2559px) and (min-width: 1920px) {
+@media screen and (max-width: 2560px) and (min-width: 1920px) {
+    .title-sub {
+      position:absolute;
+      left: 48.5%;
+      top: 205px;
+      letter-spacing: 9px;
+      font-size: 1.9em;
+    }
     h1 {
-      font-size: 5.5em;
+      font-size: 12em;
     }
     h2 {
-      font-size: 2.3em;
+      font-size: 2.8em;
     }
     iframe {
         width: 1600;
@@ -400,11 +415,18 @@ ul {
 }
 /* smaller screens */
 @media screen and (max-width: 1919px) and (min-width: 1024px) {
+    .title-sub {
+      position:absolute;
+      left: 48.5%;
+      top: 185px;
+      letter-spacing: 9px;
+      font-size: 1.8em;
+    }
     h1 {
-      font-size: 4em;
+      font-size: 10em;
     }
     h2 {
-      font-size: 2em;
+      font-size: 2.4em;
     }
     iframe {
         width: 1280;
@@ -422,11 +444,18 @@ ul {
 }
 /* phone screens */
 @media screen and (max-width: 1023px) {
+    .title-sub {
+      position:absolute;
+      left: 47.5%;
+      top: 160px;
+      letter-spacing: 5px;
+      font-size: 1.2em;
+    }
     h1 {
-      font-size: 3em;
+      font-size: 6em;
     }
     h2 {
-      font-size: 1.8em;
+      font-size: 1.6em;
     }
     iframe {
         width: 560;
