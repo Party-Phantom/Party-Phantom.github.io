@@ -53,6 +53,7 @@ header img {
 #main-page-contents {
     margin-left: 10%;
     margin-right: 10%;
+    margin-top: 30px;
     text-align: center;
     transition: all 0.5s ease-in-out;
 }
