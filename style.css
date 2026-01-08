@@ -239,8 +239,7 @@ ul {
 #calendar td {
     margin: 0;
     border: solid var(--party-color-silver);
-    width: 70px;
-    height: 70px;
+    width: calc(100% / 7);
     text-align: center;
     vertical-align: top;
 }
@@ -462,6 +461,14 @@ ul {
     }
     h2 {
       font-size: 1.6em;
+    }
+    #calendar td {
+      font-size: 0.6em;
+      border: 1px solid var(--party-color-silver);
+    }
+    #main-page-contents {
+      margin-left: 0;
+      margin-right: 0;
     }
     iframe {
         width: 560;
