@@ -473,10 +473,6 @@ ul {
 
 /* larger screens */
 @media screen and (min-width: 2560px) {
-  .divider {
-    padding-top: 20px;
-      padding-bottom: 60px;
-    }
     .title-sub {
       position:relative;
       top: 180px;
@@ -511,9 +507,6 @@ ul {
 }
 /* medium screens */
 @media screen and (max-width: 2560px) and (min-width: 1920px) {
-  .divider {
-      padding-bottom: 50px;
-    }
     .title-sub {
       position:relative;
       top: 160px;
@@ -548,9 +541,6 @@ ul {
 }
 /* smaller screens */
 @media screen and (max-width: 1919px) and (min-width: 1024px) {
-  .divider {
-      padding-bottom: 30px;
-    }
     .title-sub {
       position:relative;
       top: 140px;
@@ -585,9 +575,6 @@ ul {
 }
 /* phone screens */
 @media screen and (max-width: 1023px) {
-    .divider {
-      padding-bottom: 20px;
-    }
     .title-sub {
       position:relative;
       top: 95px;
@@ -639,7 +626,7 @@ ul {
 }
 .banner {
   box-shadow: 0 0 40px 20px #09101d inset;
-  background-image: url("img/group_photos/PhantomBanner.webp");
+  background-image: url("img/group_photos/PhantomBanner.png");
   background-size: 100% auto;
   background-repeat: no-repeat;
   opacity: 0.85;
