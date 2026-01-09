@@ -3,6 +3,18 @@
     src: url('fonts/Sloop ScriptOne Regular.ttf');
 }
 
+@keyframes floating {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
 :root {
     /* Main colors */
     --party-color-black: #0C090B;
@@ -14,6 +26,22 @@
     --party-color-gold: #EAAA52;
     --party-color-silver: #f1f1f1;
     --party-color-cream: #EEE8DC;
+}
+
+html {
+  overflow-x: hidden;
+  scrollbar-color: var(--party-color-navy) #040811;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 header {
@@ -50,6 +78,24 @@ header img {
     height: 2.5em;
 }
 
+footer {
+  position: relative;
+  margin-top: 65px;
+  left: 0;
+  bottom: 0;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  padding: 25px;
+  border-top: 5px solid black;
+  font-family: "Ovo", serif;
+  background: #040811; /* Darker blue seems right for the sticky header! */
+  box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.4);
+  max-width: 100vw;
+}
+
 #main-page-contents {
     margin-left: 10%;
     margin-right: 10%;
@@ -58,7 +104,33 @@ header img {
     transition: all 0.5s ease-in-out;
 }
 
+.divider {
+  padding-top: 10px;
+  width: 50px;
+  filter: invert(1) drop-shadow(5px 5px 5px #000000);
+  animation: floating 3s ease-in-out infinite;
+}
+
+.banner {
+  box-shadow: 0 0 40px 40px #09101d inset;
+  background-image: url("img/group_photos/PhantomBanner.webp");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  opacity: 0.6;
+  top: 60px;
+  position: absolute;
+  height: 40vw;
+  width: 100%;
+  margin: 0;
+  z-index: -1000;
+}
+
+.banner img {
+  opacity: 0;
+}
+
 body {
+  width: 100%;
     background: #09101d; /*Darker background color, may change in final background */
     color: white;
     text-align: center;
@@ -76,10 +148,13 @@ h1 {
     text-align: center;
     line-height: 1.3em;
     letter-spacing: 5px;
-    text-shadow: -6px 7px 15px rgba(112, 95, 100, 0.4);
+    text-shadow:
+    -1px -1px 15px #000,
+     1px -1px 15px #000,
+    -1px  1px 15px #000,
+     1px  1px 15px #000; /* Black shadows around the text */
     margin: .2em 0em;
     padding-top: 20px;
-    padding-bottom: 15px;
 }
 
 h2 {
@@ -106,11 +181,12 @@ ul {
 }
 
 .social-media-link {
+  text-decoration: none;
     width: 4em;
     height: 4em;
     aspect-ratio: 1;
     padding: 0;
-    margin: 0px 5px;
+    margin: 0px 15px;
 }
 
 
@@ -123,13 +199,18 @@ ul {
 
 #party-platform, #party-other {
     display: inline-block;
-    margin: 50px;
+    margin: 20px;
     padding: 20px;
     text-align: center;
 }
 
 .info-heading {
     text-align: center;
+    text-shadow:
+    -1px -1px 10px #000,
+     1px -1px 10px #000,
+    -1px  1px 10px #000,
+     1px  1px 10px #000; /* Black shadows around the text */
 }
 
 
@@ -298,6 +379,18 @@ ul {
   max-height: 500px;
 }
 
+.menu-closer {
+  filter: invert(1);
+  display: block;
+  transition: all 0.5s ease-in-out;
+  position: absolute; 
+  top: 20px;
+  right: 5%;
+  width: 30px;
+  transform: rotate(90deg);
+  opacity: 0;
+}
+
 .menu-btn {
   filter: invert(1);
   display: block;
@@ -372,12 +465,21 @@ ul {
 
 /* larger screens */
 @media screen and (min-width: 2560px) {
+  .divider {
+    padding-top: 20px;
+      padding-bottom: 60px;
+    }
     .title-sub {
       position:relative;
       top: 180px;
       left: 40px;
       letter-spacing: 9px;
       font-size: 2.1em;
+      text-shadow:
+    -1px -1px 25px #000,
+     1px -1px 25px #000,
+    -1px  1px 25px #000,
+     1px  1px 25px #000; /* Black shadows around the text */
     }
     h1 {
       font-size: 14em;
@@ -401,12 +503,20 @@ ul {
 }
 /* medium screens */
 @media screen and (max-width: 2560px) and (min-width: 1920px) {
+  .divider {
+      padding-bottom: 50px;
+    }
     .title-sub {
       position:relative;
       top: 160px;
       left: 39px;
       letter-spacing: 9px;
       font-size: 1.9em;
+      text-shadow:
+    -1px -1px 25px #000,
+     1px -1px 25px #000,
+    -1px  1px 25px #000,
+     1px  1px 25px #000; /* Black shadows around the text */
     }
     h1 {
       font-size: 12em;
@@ -430,12 +540,20 @@ ul {
 }
 /* smaller screens */
 @media screen and (max-width: 1919px) and (min-width: 1024px) {
+  .divider {
+      padding-bottom: 30px;
+    }
     .title-sub {
       position:relative;
       top: 140px;
       left: 37px;
       letter-spacing: 9px;
       font-size: 1.8em;
+      text-shadow:
+    -1px -1px 25px #000,
+     1px -1px 25px #000,
+    -1px  1px 25px #000,
+     1px  1px 25px #000; /* Black shadows around the text */
     }
     h1 {
       font-size: 10em;
@@ -459,12 +577,20 @@ ul {
 }
 /* phone screens */
 @media screen and (max-width: 1023px) {
+    .divider {
+      padding-bottom: 20px;
+    }
     .title-sub {
       position:relative;
       top: 95px;
       left: 14px;
       letter-spacing: 5px;
       font-size: 1.2em;
+      text-shadow:
+    -1px -1px 25px #000,
+     1px -1px 25px #000,
+    -1px  1px 25px #000,
+     1px  1px 25px #000; /* Black shadows around the text */
     }
     h1 {
       font-size: 6em;
@@ -495,7 +621,7 @@ ul {
         margin: 30px;
         padding: 15px;
     }
-    .menu-btn {
+    .menu-btn .menu-closer {
   top: 20px;
   right: 10%;
 }
