@@ -25,7 +25,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Belleza&family=Ovo&display=swap" rel="stylesheet">
 </head>
 <body>
-<div style="overflow-x: hidden;">
+<div style="overflow-x: hidden; width: 100%;">
     <header>
         <a href="/">
         <img src="img/party_logo_light.svg" />
@@ -35,6 +35,7 @@
             <div class="dropdown">
                 <input type="checkbox" id="menu-toggle" hidden>
                 <div id="overlay" onclick="closeMenu()"></div>
+                <img src="img/arrow-down-icon.svg" id="menucloser" class="menu-closer" alt="dropdown">
                 <label for="menu-toggle" class="menu-btn" onclick="openMenu()">
                     <img src="img/ThreeBars.svg" id="linesButton" alt="dropdown">
                 </label>
@@ -48,47 +49,76 @@
             </div>
         </nav>
     </header>
+    
+    <!-- Banner needs to stay here for proper functionality -->
+    <div class="banner" id="imgbanner"></div>
 
     <div id="main-page-contents" style="margin-top: 40px;">
         <h2 class="title-sub">PARTY</h2>
         <h1 style='font-family: "SloopScriptPro", serif;'>Phantom</h1>
-        <div id="social-media-links">
-            <a href="https://www.tiktok.com/@uhspartyphantom?_r=1&_t=ZP-92pNiy0yPlv"><img class="social-media-link" style="width: 3.9em; height: 3.9em; filter: invert(1);" src="img/TiktokNew.svg" alt="Our TikTok" /></a>
-            <a href="https://www.instagram.com/uhspartyphantom?igsh=MTdqeXhzNzlkaW54aQ"><img class="social-media-link" style="width: 3.4em; height: 3.4em; filter: invert(1); padding: 5px;" src="img/InstagramIcon.png" alt="Our Insta" /></a>
-            <a href="https://x.com/uhspartyphantom?s=21&t=6ZTY4DTrN62KCg8trynt1w"><img class="social-media-link" style="filter: invert(1);" src="img/twitter.svg" alt="Our Twitter" /></a>
+        <h2 class="info-heading">Unmask the future of progress.</h2>
+        <div>
+            <img src="img/arrow-down-icon.svg" class="divider">
         </div>
+        <!-- Section below divider -->
         <section id="party-info">
             <div id="party-other">
-                <h2 class="info-heading">Unmask the future of progress.</h2>
+                
+            </div>
+
+            <!-- Social medias-->
+            <div id="social-media-links">
+                <h2 style="text-decoration: underline;">Our socials:</h2>
+                <a href="https://www.tiktok.com/@uhspartyphantom?_r=1&_t=ZP-92pNiy0yPlv"><img class="social-media-link" style="width: 3.9em; height: 3.9em; filter: invert(1);" src="img/TiktokNew.svg" alt="Our TikTok" /></a>
+                <a href="https://www.instagram.com/uhspartyphantom?igsh=MTdqeXhzNzlkaW54aQ"><img class="social-media-link" style="width: 3.4em; height: 3.4em; filter: invert(1); padding: 5px;" src="img/InstagramIcon.png" alt="Our Insta" /></a>
+                <a href="https://x.com/uhspartyphantom?s=21&t=6ZTY4DTrN62KCg8trynt1w"><img class="social-media-link" style="filter: invert(1);" src="img/twitter.svg" alt="Our Twitter" /></a>
             </div>
         </section>
-
     </div>
+
+    <footer>
+        <div style="text-align: left; width: 65%;">Party Phantom 2025-2026</div>
+        <div class="footerPart">P5 AP Gov, University High School</div>
+    </footer>
 </div>
+
+<!-- Javascript that CC did, don't edit pls -->
 
     <script>let menuOpened = false;
 
 function closeMenu() {
     menuOpened=false;
+    document.getElementById("menucloser").style.opacity = "0";
+    document.getElementById("menucloser").style.transform = "rotate(90deg)";
     document.getElementById('menu-toggle').checked = false;
+    document.getElementById("linesButton").style.opacity = "1";
     document.getElementById("linesButton").style.transform = "rotate(0deg)";
     document.getElementById("linesButton").style.transition = "all 0.5s ease-in-out";
     document.getElementById("main-page-contents").style = "-webkit-filter: blur(0px); filter: blur(0px); margin-top: 40px;";
+    document.getElementById("imgbanner").style.filter = "blur(0px)";
 }
 
 function openMenu() {
     if (!menuOpened) {
         menuOpened = true;
         document.getElementById('menu-toggle').checked = false;
+        document.getElementById("menucloser").style.opacity = "1";
+        document.getElementById("menucloser").style.transform = "rotate(0deg)";
+        document.getElementById("linesButton").style.opacity = "0";
         document.getElementById("linesButton").style.transform = "rotate(-90deg)";
         document.getElementById("linesButton").style.transition = "all 0.5s ease-in-out";
         document.getElementById("main-page-contents").style = "-webkit-filter: blur(2px); filter: blur(2px); margin-top: 40px;";
+        document.getElementById("imgbanner").style.filter = "blur(2px)";
     } else {
         document.getElementById('menu-toggle').checked = true;
         menuOpened = false;
+        document.getElementById("menucloser").style.opacity = "0";
+        document.getElementById("menucloser").style.transform = "rotate(90deg)";
+        document.getElementById("linesButton").style.opacity = "1";
         document.getElementById("linesButton").style.transform = "rotate(0deg)";
         document.getElementById("linesButton").style.transition = "all 0.5s ease-in-out";
         document.getElementById("main-page-contents").style = "-webkit-filter: blur(0px); filter: blur(0px); margin-top: 40px;";
+        document.getElementById("imgbanner").style.filter = "blur(0px)";
     }
     
 }</script>
