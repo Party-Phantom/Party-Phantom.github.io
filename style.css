@@ -217,8 +217,8 @@ ul {
 
 /* leader section */
 
-.party-leaders {
-
+.party-leaders p {
+  text-align: left;
 }
 
 .chair {
