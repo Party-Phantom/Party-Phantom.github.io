@@ -275,17 +275,25 @@ ul {
 /* photo section */
 
 .party-photos {
-
+  column-count: 2;
+  column-gap: 10px;
+  line-height: 0;
 }
 
 .party-photos img {
-  width: 40%;
-  display: inline-flex;
-  vertical-align: middle;
+  /* width: 100%; */
+  /* display: inline-flex; */
+  /* vertical-align: middle; */
 
   border: solid 2px white;
   /* border-radius: 20px; */
-  margin: 10px;
+  /* margin: 10px; */
+
+  width: 100% !important;
+  height: auto !important;
+  margin-bottom: 10px;
+
+  break-inside: avoid;
 }
 
 .party-videos {
