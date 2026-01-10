@@ -98,6 +98,7 @@ footer {
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 100px;
+    margin-bottom: 50px;
     text-align: center;
     transition: all 0.5s ease-in-out;
 }
