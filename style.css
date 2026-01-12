@@ -212,6 +212,7 @@ ul {
     margin: 20px;
     padding: 20px;
     text-align: center;
+	align-items: center;
 }
 
 .info-heading {
@@ -225,12 +226,21 @@ ul {
 
 .table-contents {
   text-align: center;
+  border-top: solid 1px white;
+  border-right: solid 1px white;
+  width: 90%;
+  margin: auto 20px;
 }
 
 .table-contents th {
   padding: 10px;
   font-size: 24px;
   font-family: "Ovo";
+}
+
+.table-contents th, .table-contents tr, .table-contents td {
+  border-bottom: solid 1px white;
+  border-left: solid 1px white;
 }
 
 
