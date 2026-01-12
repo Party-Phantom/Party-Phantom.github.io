@@ -658,6 +658,12 @@ ul {
         margin: 30px;
         padding: 15px;
     }
+	.table-contents td {
+      font-size: 0.6em;
+    }
+    .table-contents th {
+      font-size: 0.8em;
+    }
     .menu-btn {
   top: 20px;
   right: 12%;
