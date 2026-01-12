@@ -91,6 +91,7 @@ footer {
   background: #14161F;
   box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.4);
   min-width: 100vw;
+  font-size: 0.95em;
   color: white; /* Added for readability against dark background */
 }
 
