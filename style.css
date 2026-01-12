@@ -123,10 +123,10 @@ li {
 
 .banner {
   box-shadow: 0 0 40px 40px #09101d inset;
-  background-image: url("img/group_photos/PhantomBanner.webp");
+  background-image: url("img/group_photos/DesktopBanner.png");
   background-size: 100% auto;
   background-repeat: no-repeat;
-  opacity: 0.95;
+  opacity: 0.85;
   top: 60px;
   position: absolute;
   height: 40vw;
