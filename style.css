@@ -222,6 +222,16 @@ ul {
      1px  1px 10px #000; /* Black shadows around the text */
 }
 
+.table-contents {
+  text-align: center;
+}
+
+.table-contents th {
+  padding: 10px;
+  font-size: 24px;
+  font-family: "Ovo";
+}
+
 
 
 /* leader section */
