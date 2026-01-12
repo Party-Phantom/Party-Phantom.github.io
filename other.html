@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Party Phantom</title>
+    <link rel="icon" type="image/png" href="img/MaskDark.png" media="(prefers-color-scheme: light)">
+    <link rel="icon" type="image/svg" href="img/MaskLight.png" media="(prefers-color-scheme: dark)">
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belleza&family=Ovo&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div style="overflow-x: hidden;">
+        <header>
+        <a href="/">
+        <img src="img/Logos/Header-Logo.svg"/>
+        <span>Party Phantom</span>
+        </a>
+        <nav class="navbar">
+            <div class="dropdown">
+                <input type="checkbox" id="menu-toggle" hidden>
+                <div id="overlay" onclick="closeMenu()"></div>
+                <img src="img/arrow-down-icon.svg" id="menucloser" class="menu-closer" alt="dropdown">
+                <label for="menu-toggle" class="menu-btn" onclick="openMenu()">
+                    <img src="img/ThreeBars.svg" id="linesButton" alt="dropdown">
+                </label>
+                <div class="dropdown-content">
+                    <a href="/">Home</a>
+                    <a href="platform">Party Platform</a>
+                    <a href="leaders">Party Leaders</a>
+                    <a href="photos">Photos/Videos</a>
+                    <a href="calendar">Calendar</a>
+                    <a href="other">Other</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+        <div id="main-page-contents">
+                <h2 class="info-heading">Miscellaneous Page</h2>
+
+                <hr>
+                <p>Check out all the Party Websites</p>
+            <ul>
+                <li style="background-image: url(img/Logos/PhantomInv.png);"><h3><a href="https://uhspartyphantom.com/">Party Phantom</a></h3></li>
+                <li style="background-image: url(img/Logos/EclipseInv.png);"><h3><a href="https://[partyeclipse.org/">Party Eclipse</a></h3></li>
+                <li style="background-image: url(img/Logos/WorldwideInv.png);"><h3><a href="https://partyworldwide.org/">Party Worldwide</a></h3></li>
+                <li style="background-image: url(img/Logos/GrandPrixInv.png);"><h3><a href="https://partygrandprix.org/">Party Grand Prix</a></h3></li>
+            </ul>
+            <hr>
+                <p>Party Linktrees</p>
+            <ul>
+                <li style="background-image: url(img/Logos/PhantomInv.png);"><h3><a>Party Phantom</a></h3></li>
+                <li style="background-image: url(img/Logos/EclipseInv.png);"><h3><a>Party Eclipse</a></h3></li>
+                <li style="background-image: url(img/Logos/WorldwideInv.png);"><h3><a>Party Worldwide</a></h3></li>
+                <li style="background-image: url(img/Logos/GrandPrixInv.png);"><h3><a>Party Grand Prix</a></h3></li>
+            </ul>
+            <hr>
+            <p>Bloopers</p>
+            <h3>Coming with the Party Phantom video!</h3>
+            <hr>
+            <p>Buttons</p>
+            <h3>TBA</h3>
+        </div>
+        <footer style="width: 100%">
+            <div style="text-align: left; width: 50%; padding-left: 25px;">UHS, P5 AP Gov</div>
+            <div style="text-align: right; width: 50%; padding-right: 25px;">Party Phantom 2025-2026</div>
+        </footer>
+    </div>
+    <script src="js/navbar.js"></script>
+</body>
