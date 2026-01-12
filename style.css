@@ -362,6 +362,14 @@ ul {
   opacity: 1;
 }
 
+.dropdown-icon {
+  filter: invert(1);
+  height: 1.25em;
+  margin-right: 0.5em;
+  margin-left: -0.25em;
+  aspect-ratio: 1;
+}
+
 .dropdown-content {
   visibility: hidden;
   opacity: 0;
