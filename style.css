@@ -260,6 +260,7 @@ ul {
   height: 1.3vw;
   padding: 5px 5px -15px 5px;
   margin: -10px;
+  opacity: 0;
 }
 
 .secret-button-mobile {
@@ -270,7 +271,8 @@ ul {
   height: 3.5vw;
   padding: 5px 5px -15px 5px;
   margin: -15px;
-      visibility: hidden;
+  visibility: hidden;
+  opacity: 0;
     }
 
 .party-leaders h3 {
