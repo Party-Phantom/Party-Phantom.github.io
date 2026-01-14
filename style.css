@@ -692,12 +692,12 @@ ul {
         padding: 15px;
     }
 	.table-contents td {
-      font-size: 0.5em;
-      padding: 5px;
+      font-size: 0.6em;
+      padding: 3vw;
     }
     .table-contents th {
-      font-size: 0.7em;
-      padding: 5px;
+      font-size: 0.8em;
+      padding: 3vw;
     }
     .menu-btn {
   top: 20px;
