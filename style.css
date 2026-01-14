@@ -240,18 +240,40 @@ ul {
   padding: 10px;
   font-size: 24px;
   font-family: "Ovo";
+  padding: 10px;
 }
 
 .table-contents th, .table-contents tr, .table-contents td {
   border-bottom: solid 1px white;
   border-left: solid 1px white;
+  padding: 10px;
 }
 
 
 
 /* leader section */
+.secret-button {
+  background-color: white;
+  color: white;
+  position: relative;
+  width: 1.3vw;
+  height: 1.3vw;
+  padding: 5px 5px -15px 5px;
+  margin: -10px;
+}
 
-.party-leaders p {
+.secret-button-mobile {
+  background-color: white;
+  color: white;
+  position: relative;
+  width: 2.3vw;
+  height: 3.5vw;
+  padding: 5px 5px -15px 5px;
+  margin: -15px;
+      visibility: hidden;
+    }
+
+.party-leaders h3 {
   text-align: left;
 }
 
@@ -539,7 +561,7 @@ ul {
     }
 
     .party-leaders img {
-      width: 65%;
+      width: 55%;
     }
 
     #party-platform, #party-other {
@@ -573,7 +595,7 @@ ul {
     }
 
     .party-leaders img {
-        width: 65%;
+        width: 55%;
     }
 
     #party-platform, #party-other {
@@ -617,6 +639,14 @@ ul {
 }
 /* phone screens */
 @media screen and (max-width: 1023px) {
+    .secret-button-mobile {
+      visibility: visible;
+      margin: -12px;
+    }
+    .secret-button {
+      visibility: hidden;
+      margin: -13px;
+    }
     .title-sub {
       position:relative;
       top: 95px;
@@ -651,6 +681,7 @@ ul {
     .party-leaders img {
         width: 90%;
     }
+    
     .leader-info {
         width: 90%;
     }
@@ -659,10 +690,12 @@ ul {
         padding: 15px;
     }
 	.table-contents td {
-      font-size: 0.6em;
+      font-size: 0.5em;
+      padding: 5px;
     }
     .table-contents th {
-      font-size: 0.8em;
+      font-size: 0.7em;
+      padding: 5px;
     }
     .menu-btn {
   top: 20px;
@@ -674,7 +707,7 @@ ul {
 }
 .banner {
   box-shadow: 0 0 40px 20px #09101d inset;
-  background-image: url("img/group_photos/PhantomBanner.webp");
+  background-image: url("img/group_photos/DesktopBanner.png");
   background-size: 100% auto;
   background-repeat: no-repeat;
   opacity: 0.85;
