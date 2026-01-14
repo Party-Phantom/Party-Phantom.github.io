@@ -53,9 +53,14 @@
     
     <!-- Banner needs to stay here for proper functionality -->
     <div class="banner" id="imgbanner"></div>
-
+    <audio id="Tbh" src="audio/Yippee.wav" preload="auto" style="display:none;"></audio>
+    <audio id="Aww" src="audio/Scream.wav" preload="auto" style="display:none;"></audio>
+    <div class="announce">
+        <h3>Party platform out <a href="platform" style="color: white;">now!</a></h3>
+        </div>  
     <div id="main-page-contents" style="margin-top: 40px;">
-        <h2 class="title-sub">PARTY</h2>
+        
+        <h2 class="title-sub"><span onclick="TBH()">P</span><span onclick="cri()">A</span><span onclick="TBH()">RTY</span></h2>
         <h1 style='font-family: "SloopScriptPro", serif;'>Phantom</h1>
         <h2 class="info-heading">Unmasking the future.</h2>
         <!-- Social medias-->
@@ -81,6 +86,23 @@
 </div>
 
 <!-- Javascript that CC did, don't edit pls -->
+
+<script>
+    // Yippee sfx
+      function TBH() {
+        var audio = document.getElementById("Tbh") 
+        audio.pause();
+        audio.currentTime = 0;
+        audio.play();
+      }
+      // Yippee sfx
+      function cri() {
+        var aw = document.getElementById("Aww") 
+        aw.pause();
+        aw.currentTime = 0;
+        aw.play();
+      }
+    </script>
 
     <script>let menuOpened = false;
 
