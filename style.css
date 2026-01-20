@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'SloopScriptPro'; /* Name you will use in your CSS */
+    font-family: 'SloopScriptPro';
     src: url('fonts/Sloop ScriptOne Regular.ttf');
 }
 
@@ -13,6 +13,37 @@
     100% {
         transform: translateY(0);
     }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(0px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(5px);
+  }
+}
+
+@keyframes popup {
+  0% {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
 }
 
 :root {
@@ -42,6 +73,24 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
+}
+
+.announce {
+  position: absolute;
+  width: 98%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 3px;
+  border-radius: 5px;
+  margin: 85px 1%;
+  animation-name: popup;
+  animation-duration: 3s;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  animation-timing-function: smooth;
+  animation-fill-mode: both; 
+  animation-delay: 1.5s;
+  transform-origin: left;
 }
 
 header {
@@ -78,14 +127,20 @@ header img {
     height: 2.5em;
 }
 
-.announce {
-  position: absolute;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 3px;
-  margin-top: 75px;
-  border-radius: 30px;
-  
+#Confetti {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    max-width: 100%;
+    visibility: hidden;
+}
+
+@keyframes myAnimation {
+  0% { opacity: 1; visibility: visible;}
+  100% { opacity: 0; visibility: hidden; }
+}
+
+.animating {
+  animation: myAnimation 0.5s forwards;
 }
 
 footer {
@@ -103,6 +158,19 @@ footer {
   min-width: 100vw;
   font-size: 0.95em;
   color: white; /* Added for readability against dark background */
+}
+
+.title {
+  animation-delay: 0.5s;
+  animation-name: fadeInUp;
+  animation-duration: 1.5s;
+  animation-fill-mode: both; 
+}
+.title-sub {
+  animation-delay: 0.75s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+  animation-fill-mode: both; 
 }
 
 #main-page-contents {
@@ -132,6 +200,9 @@ li {
 }
 
 .banner {
+  animation-name: fadeInUp;
+  animation-duration: 1.5s;
+  animation-fill-mode: both; 
   box-shadow: 0 0 40px 40px #09101d inset;
   background-image: url("img/group_photos/DesktopBanner.png");
   background-size: 100% auto;
@@ -205,6 +276,9 @@ ul {
 }
 
 .social-media-link {
+  animation-name: fadeInUp;
+  animation-duration: 2s;
+  animation-fill-mode: both; 
   text-decoration: none;
     width: 4em;
     height: 4em;
@@ -219,6 +293,7 @@ ul {
 
 #party-info {
     text-align: center;
+    width: 100%;
 }
 
 #party-platform, #party-other {
@@ -230,6 +305,10 @@ ul {
 }
 
 .info-heading {
+  animation-delay: 1.25s;
+  animation-name: fadeInUp;
+  animation-duration: 1.5s;
+  animation-fill-mode: both; 
     text-align: center;
     text-shadow:
     -1px -1px 10px #000,
@@ -270,7 +349,6 @@ ul {
   height: 1.3vw;
   padding: 5px 5px -15px 5px;
   margin: -10px;
-  opacity: 0;
 }
 
 .secret-button-mobile {
@@ -281,8 +359,7 @@ ul {
   height: 3.5vw;
   padding: 5px 5px -15px 5px;
   margin: -15px;
-  visibility: hidden;
-  opacity: 0;
+      visibility: hidden;
     }
 
 .party-leaders h3 {
@@ -702,11 +779,11 @@ ul {
         padding: 15px;
     }
 	.table-contents td {
-      font-size: 0.6em;
+      font-size: 0.65em;
       padding: 3vw;
     }
     .table-contents th {
-      font-size: 0.8em;
+      font-size: 0.9em;
       padding: 3vw;
     }
     .menu-btn {
@@ -729,5 +806,15 @@ ul {
   width: 100%;
   margin: 0;
   z-index: -1000;
+}
+.announce {
+  animation-duration: 1.3s;
+  position: absolute;
+  width: 30%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 3px;
+  border-radius: 5px;
+  margin: 80px 1%;
+  font-size: 0.67em;
 }
 }
