@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Party Phantom</title>
+    <link rel="icon" type="image/png" href="img/MaskDark.png" media="(prefers-color-scheme: light)">
+    <link rel="icon" type="image/svg" href="img/MaskLight.png" media="(prefers-color-scheme: dark)">
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belleza&family=Ovo&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div style="overflow-x: hidden;">
+        <header>
+        <a href="/">
+        <img src="img/Logos/Header-Logo.svg" />
+        <span>Party Phantom</span>
+        </a>
+        <nav class="navbar">
+            <div class="dropdown">
+                <input type="checkbox" id="menu-toggle" hidden>
+                <div id="overlay" onclick="closeMenu()"></div>
+                <img src="img/arrow-down-icon.svg" id="menucloser" class="menu-closer" alt="dropdown">
+                <label for="menu-toggle" class="menu-btn" onclick="openMenu()">
+                    <img src="img/ThreeBars.svg" id="linesButton" alt="dropdown">
+                </label>
+                <div class="dropdown-content">
+                    <a href="/"><img class="dropdown-icon" src="img/home_icon.svg">Home</a>
+                    <a href="platform"><img class="dropdown-icon" src="img/platform_icon.svg">Party Platform</a>
+                    <a href="leaders"><img class="dropdown-icon" src="img/Masquerade Mask.png">Party Leaders</a>
+                    <a href="photos"><img class="dropdown-icon" src="img/photos_icon.svg">Photos/Videos</a>
+                    <a href="calendar"><img class="dropdown-icon" src="img/calendar_icon.svg">Calendar</a>
+                    <a href="other"><img class="dropdown-icon" style="filter: none; height: 1.05em;" src="img/Logos/StarPNG.png">Other</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+        <div id="main-page-contents">
+            <h2>Secret Page</h2>
+            <h3>Woah! This is cool! Enjoy this game!</h3>
+            <p style="padding: 30px;">Vs Phantom: Silksong Bossfight<p>
+            <iframe src="PhantomFight/index.html" style="width:50vw; height:42.5vw;" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            <h3 style="padding-top: 30px;">How to Play:</h3>
+            <h3 >No Mobile compatibility</h3>
+            <h3 >AD to move, space to jump, L to dash, M to attack, E to heal when bar is full and glowing.</h3>
+            <h3 style="padding-bottom: 30px;">If you die or want to play again, click the green flag again!</h3>
+            
+        </div>
+        <footer style="width: 100%">
+            <div style="text-align: left; width: 50%; padding-left: 25px;">UHS, P5 AP Gov</div>
+            <div style="text-align: right; width: 50%; padding-right: 25px;">Party Phantom 25-26</div>
+        </footer>
+    </div>
+    <script src="js/navbar.js"></script>
+</body>
+</html>
