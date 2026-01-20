@@ -34,6 +34,16 @@
     transform: translateY(5px);
   }
 }
+@keyframes fadeBanner {
+  0% {
+    opacity: 0;
+    transform: translateY(0px);
+  }
+  100% {
+    opacity: 0.85;
+    transform: translateY(5px);
+  }
+}
 
 @keyframes popup {
   0% {
@@ -213,6 +223,18 @@ li {
   width: 100%;
   margin: 0;
   z-index: -1000;
+}
+
+#imgbanner {
+  opacity: 0;
+}
+
+#imgbanner.loaded {
+  opacity: 1;
+    animation-delay: 0.5s;
+  animation-name: fadeBanner;
+  animation-duration: 1.5s;
+  animation-fill-mode: both; 
 }
 
 #imgbanner {
