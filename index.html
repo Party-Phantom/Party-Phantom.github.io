@@ -121,8 +121,7 @@ function openMenu() {
 <!-- Page Visuals -->
 
 <body>
-<link rel="preload" as="image" href="img/group_photos/DesktopBanner.png" type="image/png">
-<img src="img/Confetti.png" id="Confetti" style="width: 100%; z-index:200000; position: fixed; left:0; opacity:0;">
+<img src="img/confetti.png" id="Confetti" style="width: 100%; z-index:200000; position: fixed; left:0; opacity:0;">
 <div style="overflow-x: hidden; width: 100%;">
     <header>
         <a href="/">
@@ -151,6 +150,7 @@ function openMenu() {
     
     <!-- Banner needs to stay here for proper functionality -->
     <div class="banner" id="imgbanner"></div>
+    <img src="img/group_photos/DesktopBanner.png" style="height: 0; opacity: 0;" onload="imgbanner.classList.add('loaded');">
     <audio id="Tbh" src="audio/Yippee.wav" preload="auto" style="display:none;"></audio>
     <audio id="Aww" src="audio/Scream.wav" preload="auto" style="display:none;"></audio>
     <div class="announce">
