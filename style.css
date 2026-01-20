@@ -345,6 +345,7 @@ ul {
   background-color: white;
   color: white;
   position: relative;
+  opacity: 0;
   width: 1.3vw;
   height: 1.3vw;
   padding: 5px 5px -15px 5px;
@@ -359,7 +360,8 @@ ul {
   height: 3.5vw;
   padding: 5px 5px -15px 5px;
   margin: -15px;
-      visibility: hidden;
+  opacity: 0;
+  visibility: hidden;
     }
 
 .party-leaders h3 {
