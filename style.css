@@ -161,14 +161,14 @@ footer {
 }
 
 .title {
-  animation-delay: 0.5s;
+  animation-delay: 0.75s;
   animation-name: fadeInUp;
   animation-duration: 1.5s;
   animation-fill-mode: both; 
 }
 .title-sub {
-  animation-delay: 0.75s;
-  animation-name: fade;
+  animation-delay: 0.9s;
+  animation-name: fadeInUp;
   animation-duration: 1.5s;
   animation-fill-mode: both; 
 }
@@ -200,20 +200,31 @@ li {
 }
 
 .banner {
-  animation-name: fadeInUp;
+  /* animation-name: fadeInUp;
   animation-duration: 1.5s;
-  animation-fill-mode: both; 
+  animation-fill-mode: both; */
   box-shadow: 0 0 40px 40px #09101d inset;
   background-image: url("img/group_photos/DesktopBanner.png");
   background-size: 100% auto;
   background-repeat: no-repeat;
-  opacity: 0.85;
   top: 60px;
   position: absolute;
   height: 40vw;
   width: 100%;
   margin: 0;
   z-index: -1000;
+}
+
+#imgbanner {
+  opacity: 0;
+}
+
+#imgbanner.loaded {
+  opacity: 1;
+    animation-delay: 0.5s;
+  animation-name: fadeBanner;
+  animation-duration: 1.5s;
+  animation-fill-mode: both; 
 }
 
 .banner img {
