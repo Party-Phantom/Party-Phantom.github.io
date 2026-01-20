@@ -24,87 +24,62 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Belleza&family=Ovo&display=swap" rel="stylesheet">
 </head>
-<body>
-<div style="overflow-x: hidden; width: 100%;">
-    <header>
-        <a href="/">
-        <img src="img/Logos/Header-Logo.svg" />
-        <span>Party Phantom</span>
-        </a>
-        <nav class="navbar">
-            <div class="dropdown">
-                <input type="checkbox" id="menu-toggle" hidden>
-                <div id="overlay" onclick="closeMenu()"></div>
-                <img src="img/arrow-down-icon.svg" id="menucloser" class="menu-closer" alt="dropdown">
-                <label for="menu-toggle" class="menu-btn" onclick="openMenu()">
-                    <img src="img/ThreeBars.svg" id="linesButton" alt="dropdown">
-                </label>
-                <div class="dropdown-content">
-                    <a href="/"><img class="dropdown-icon" src="img/home_icon.svg">Home</a>
-                    <a href="platform"><img class="dropdown-icon" src="img/platform_icon.svg">Party Platform</a>
-                    <a href="leaders"><img class="dropdown-icon" src="img/Masquerade Mask.png">Party Leaders</a>
-                    <a href="photos"><img class="dropdown-icon" src="img/photos_icon.svg">Photos/Videos</a>
-                    <a href="calendar"><img class="dropdown-icon" src="img/calendar_icon.svg">Calendar</a>
-                    <a href="other"><img class="dropdown-icon" style="filter: none; height: 1.05em;" src="img/Logos/StarPNG.png">Other</a>
-                </div>
-            </div>
-        </nav>
-    </header>
-    
-    <!-- Banner needs to stay here for proper functionality -->
-    <div class="banner" id="imgbanner"></div>
-    <audio id="Tbh" src="audio/Yippee.wav" preload="auto" style="display:none;"></audio>
-    <audio id="Aww" src="audio/Scream.wav" preload="auto" style="display:none;"></audio>
-    <div class="announce">
-        <h3>Party platform out <a href="platform" style="color: white;">now!</a></h3>
-        </div>  
-    <div id="main-page-contents" style="margin-top: 40px;">
-        
-        <h2 class="title-sub"><span onclick="TBH()">P</span><span onclick="cri()">A</span><span onclick="TBH()">RTY</span></h2>
-        <h1 style='font-family: "SloopScriptPro", serif;'>Phantom</h1>
-        <h2 class="info-heading">Unmasking the future.</h2>
-        <!-- Social medias-->
-            <div id="social-media-links">
-                <a href="https://www.tiktok.com/@uhspartyphantom?_r=1&_t=ZP-92pNiy0yPlv"><img class="social-media-link" style="width: 3.9em; height: 3.9em; filter: invert(1);" src="img/TiktokNew.svg" alt="Our TikTok" /></a>
-                <a href="https://www.instagram.com/uhspartyphantom?igsh=MTdqeXhzNzlkaW54aQ"><img class="social-media-link" style="width: 3.4em; height: 3.4em; filter: invert(1); padding: 5px;" src="img/InstagramIcon.png" alt="Our Insta" /></a>
-                <a href="https://x.com/uhspartyphantom?s=21&t=6ZTY4DTrN62KCg8trynt1w"><img class="social-media-link" style="filter: invert(1);" src="img/twitter.svg" alt="Our Twitter" /></a>
-            </div>
-        <!-- Section below divider -->
-        <section id="party-info">
-            <div id="party-other">
-                
-            </div>
-
-            
-        </section>
-    </div>
-
-    <footer style="width: 100%">
-        <div style="text-align: left; width: 50%; padding-left: 25px;">UHS, P5 AP Gov</div>
-        <div style="text-align: right; width: 50%; padding-right: 25px;">Party Phantom 25-26</div>
-    </footer>
-</div>
 
 <!-- Javascript that CC did, don't edit pls -->
+
+<script src="js/scrolling.js"></script>
 
 <script>
     // Yippee sfx
       function TBH() {
-        var audio = document.getElementById("Tbh") 
+        var audio = document.getElementById("Tbh") ;
         audio.pause();
         audio.currentTime = 0;
         audio.play();
       }
       // Yippee sfx
       function cri() {
-        var aw = document.getElementById("Aww") 
+        const imag = document.getElementById('Confetti');
+        var aw = document.getElementById("Aww");
         aw.pause();
         aw.currentTime = 0;
         aw.play();
+        imag.classList.add('animating');
+        imag.addEventListener('animationend', () => {
+        imag.classList.remove('animating');
+        }, { once: true })
       }
-    </script>
+   
+        document.addEventListener('DOMContentLoaded', () => {
+    const fadeDiv = document.getElementById('fading');
 
-    <script>let menuOpened = false;
+    function checkPosition() {
+        const viewportHeight = window.innerHeight;
+        const elementTop = fadeDiv.getBoundingClientRect().top;
+        const elementHeight = fadeDiv.offsetHeight;
+        const viewportCenter = viewportHeight / 2;
+        const startFadePosition = viewportHeight * 0.75;
+        const endFadePosition = viewportCenter;
+        
+        if (elementTop < startFadePosition && elementTop > -elementHeight) {
+            let opacity = 1 - (elementTop - endFadePosition) / (startFadePosition - endFadePosition);
+            opacity = Math.max(0, Math.min(1, opacity));
+            
+            fadeDiv.style.opacity = opacity;
+        } else if (elementTop >= startFadePosition) {
+            fadeDiv.style.opacity = 0;
+        } else if (elementTop <= -elementHeight) {
+            fadeDiv.style.opacity = 1; 
+        }
+    }
+    window.addEventListener('scroll', checkPosition);
+    window.addEventListener('resize', checkPosition);
+    checkPosition();
+});
+
+
+    
+    let menuOpened = false;
 
 function closeMenu() {
     menuOpened=false;
@@ -142,6 +117,77 @@ function openMenu() {
     }
     
 }</script>
+
+<!-- Page Visuals -->
+
+<body>
+<img src="img/confetti.png" id="Confetti" style="width: 100%; z-index:200000; position: fixed; left:0; opacity:0;">
+<div style="overflow-x: hidden; width: 100%;">
+    <header>
+        <a href="/">
+        <img src="img/Logos/Header-Logo.svg" />
+        <span>Party Phantom</span>
+        </a>
+        <nav class="navbar">
+            <div class="dropdown">
+                <input type="checkbox" id="menu-toggle" hidden>
+                <div id="overlay" onclick="closeMenu()"></div>
+                <img src="img/arrow-down-icon.svg" id="menucloser" class="menu-closer" alt="dropdown">
+                <label for="menu-toggle" class="menu-btn" onclick="openMenu()">
+                    <img src="img/ThreeBars.svg" id="linesButton" alt="dropdown">
+                </label>
+                <div class="dropdown-content">
+                    <a href="/"><img class="dropdown-icon" src="img/home_icon.svg">Home</a>
+                    <a href="platform"><img class="dropdown-icon" src="img/platform_icon.svg">Party Platform</a>
+                    <a href="leaders"><img class="dropdown-icon" src="img/Masquerade Mask.png">Party Leaders</a>
+                    <a href="photos"><img class="dropdown-icon" src="img/photos_icon.svg">Photos/Videos</a>
+                    <a href="calendar"><img class="dropdown-icon" src="img/calendar_icon.svg">Calendar</a>
+                    <a href="other"><img class="dropdown-icon" style="filter: none; height: 1.05em;" src="img/Logos/StarPNG.png">Other</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Banner needs to stay here for proper functionality -->
+    <div class="banner" id="imgbanner"></div>
+    <audio id="Tbh" src="audio/Yippee.wav" preload="auto" style="display:none;"></audio>
+    <audio id="Aww" src="audio/Scream.wav" preload="auto" style="display:none;"></audio>
+    <div class="announce">
+        <h3>Party platform out <a href="platform" style="color: white;">now!</a></h3>
+        </div>  
+    <div id="main-page-contents" style="margin-top: 40px;">
+        
+        <h2 class="title-sub" style="z-index: 66;"><span onclick="TBH()">P</span><span onclick="cri()" id="confettiButton">A</span><span onclick="TBH()">RTY</span></h2>
+        <h1 class="title" style='font-family: "SloopScriptPro", serif;'>Phantom</h1>
+        <h2 class="info-heading">Unmasking the future.</h2>
+        <!-- Social medias-->
+            <div id="social-media-links">
+                <a href="https://www.tiktok.com/@uhspartyphantom?_r=1&_t=ZP-92pNiy0yPlv"><img class="social-media-link" style="width: 3.9em; height: 3.9em; filter: invert(1); animation-delay: 1.8s;" src="img/TiktokNew.svg" alt="Our TikTok" /></a>
+                <a href="https://www.instagram.com/uhspartyphantom?igsh=MTdqeXhzNzlkaW54aQ"><img class="social-media-link" style="width: 3.4em; height: 3.4em; filter: invert(1); padding: 5px; animation-delay: 1.9s;" src="img/InstagramIcon.png" alt="Our Insta" /></a>
+                <a href="https://x.com/uhspartyphantom?s=21&t=6ZTY4DTrN62KCg8trynt1w"><img class="social-media-link" style="filter: invert(1); animation-delay: 2s;" src="img/twitter.svg" alt="Our Twitter" /></a>
+            </div>
+        <!-- Section below divider -->
+        <section id="party-info" style="justify-content: center; align-items: center;">
+            <h2 id="fading" style="margin-top: 80px;">Our Mission</h2>
+            <div id="fading2" style="width: 98%; background-color: rgba(0, 0, 0, 0.35); padding: 15px; border-radius: 15px;">
+            <h3 style="text-align: left; vertical-align: top; text-indent: 50px; line-height: 1.4; font-family: 'Belleza', serif;">
+                Party Phantom is committed to opening the curtains for a better future for all. For too long,
+                Americans have been left watching from a distance as their infrastructure decays, social programs weaken, and everyday costs rise. Here with Party Phantom, we seek to write a different story. One where citizens can wake up in a nation that actively supports them. From improvements to the legal immigration system to addressing America’s role in global affairs, Party Phantom is ready to unmask the future of progress.
+            </h3>
+            </div>
+            <div id="party-other">
+                
+            </div>
+
+            
+        </section>
+    </div>
+
+    <footer style="width: 100%">
+        <div style="text-align: left; width: 50%; padding-left: 25px;">UHS, P5 AP Gov</div>
+        <div style="text-align: right; width: 50%; padding-right: 25px;">Party Phantom 25-26</div>
+    </footer>
+</div>
     
 </body>
 </html>
