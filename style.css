@@ -102,6 +102,24 @@ body {
   animation-delay: 1.5s;
   transform-origin: left;
 }
+.announceVid {
+  animation-duration: 1.3s;
+  position: absolute;
+  width: 30%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 3px;
+  border-radius: 5px;
+  margin: 160px 1%;
+  animation-name: popup;
+  animation-duration: 4s;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  animation-timing-function: smooth;
+  animation-fill-mode: both; 
+  animation-delay: 2.3s;
+  transform-origin: left;
+}
 
 header {
     text-align: left;
@@ -237,18 +255,6 @@ li {
   animation-fill-mode: both; 
 }
 
-#imgbanner {
-  opacity: 0;
-}
-
-#imgbanner.loaded {
-  opacity: 1;
-    animation-delay: 0.5s;
-  animation-name: fadeBanner;
-  animation-duration: 1.5s;
-  animation-fill-mode: both; 
-}
-
 .banner img {
   opacity: 0;
 }
@@ -337,6 +343,13 @@ ul {
 	align-items: center;
 }
 
+.otherBox {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
 .info-heading {
   animation-delay: 0.25s;
   animation-name: fadeInUp;
@@ -386,6 +399,7 @@ ul {
 }
 
 .secret-button-mobile {
+  opacity: 0;
   background-color: white;
   color: white;
   position: relative;
@@ -393,8 +407,7 @@ ul {
   height: 3.5vw;
   padding: 5px 5px -15px 5px;
   margin: -15px;
-  opacity: 0;
-  visibility: hidden;
+      visibility: hidden;
     }
 
 .party-leaders h3 {
@@ -845,11 +858,18 @@ ul {
 .announce {
   animation-duration: 1.3s;
   position: absolute;
-  width: 40%;
+  width: 30%;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 3px;
   border-radius: 5px;
   margin: 80px 1%;
   font-size: 0.67em;
+}
+.announceVid {
+  font-size: 0.64em;
+  padding: 0px;
+  top: 0;
+  width: 27%;
+  z-index: 78;
 }
 }
